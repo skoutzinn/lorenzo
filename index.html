@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carambola Induzidos | Links</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a url('/flamarini\\ trabalhando.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      user-select: none;
+      overflow-x: hidden;
+    }
+
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      background: linear-gradient(145deg, rgba(26, 26, 26, 0.75), rgba(13, 13, 13, 0.75));
+      border-radius: 25px;
+      max-width: 420px;
+      width: 100%;
+      padding: 50px 35px 60px;
+      text-align: center;
+      box-shadow: 0 0 15px #ffffffcc, inset 0 0 30px #ffffff33;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      border: 2px solid #ffffff;
+      position: relative;
+      overflow: hidden;
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -30%;
+      width: 160%;
+      height: 160%;
+      background: radial-gradient(circle at center, #ffffff33, transparent 60%);
+      filter: blur(80px);
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+      z-index: 0;
+      border-radius: 25px;
+    }
+
+    .container:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #ffffff, inset 0 0 50px #ffffffcc;
+    }
+
+    .container:hover::before {
+      opacity: 0.6;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 30px;
+      border: 4px solid #ffffff;
+      box-shadow: 0 0 20px #ffffffaa;
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+      position: relative;
+      z-index: 1;
+      background: #1a1a1a;
+      filter: drop-shadow(0 0 6px #ffffff44);
+    }
+
+    .logo:hover {
+      box-shadow: 0 0 40px #ffffff;
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px #ffffff);
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      color: #ff1a1a;
+      text-shadow: 0 0 10px #e10600bb;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 40px;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 6px #ffffff99;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 16px 30px;
+      margin: 14px 0;
+      border-radius: 50px;
+      border: 2.5px solid #ffffff;
+      box-shadow: 0 0 15px #ffffff77;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      gap: 14px;
+      transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+      position: relative;
+      z-index: 1;
+      font-family: 'Segoe UI Emoji', 'Arial', sans-serif;
+    }
+
+    .link-btn:hover,
+    .link-btn:focus {
+      background: #ffffff;
+      color: #0a0a0a;
+      box-shadow: 0 0 25px #ffffff, 0 0 30px #ffffff;
+      transform: scale(1.08);
+      outline: none;
+      text-shadow: none;
+    }
+
+    .link-btn::before {
+      content: attr(data-icon);
+      font-size: 1.7rem;
+      margin-right: 14px;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .link-btn:hover::before,
+    .link-btn:focus::before {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 35px 20px 45px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+
+      .link-btn {
+        font-size: 1rem;
+        padding: 14px 24px;
+      }
+
+      .link-btn::before {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" role="main" aria-label="Links importantes da oficina Carambola Induzidos">
+    <img src="/logo carambola gpt.jpg" alt="Logo Carambola Induzidos" class="logo" />
+    <h1>Carambola Induzidos</h1>
+    <p>Elétrica Automotiva</p>
+
+    <a href="https://wa.me/5518981260001" target="_blank" rel="noopener noreferrer" class="link-btn" data-icon="💬"
+      aria-label="Orçamento via WhatsApp">Orçamento via WhatsApp</a>
+
+
+
+    <a href="tel:+5518981260001" class="link-btn" data-icon="📞" aria-label="Ligue para nós">Ligue para nós</a>
+
+    <a href="https://maps.app.goo.gl/RVfns36Bp5VRXAGz6" target="_blank" rel="noopener noreferrer" class="link-btn"
+      data-icon="📍" aria-label="Como chegar">Como chegar</a>
+  </div>
+</body>
+
+</html>
